@@ -42,11 +42,13 @@ nav {
     justify-content: flex-start; /* Align the logo to the left */
     width: 20%; /* Adjust the width of the logo container */
     height: 100%; /* Fill the height of the nav */
+    justify-content: center;
+    padding: 3px;;
 }
 
 #logoto {
-    max-width: 100%; /* Ensure the logo fits within its container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 60%; /* Ensure the logo fits within its container */
+    height: 100%; /* Maintain the aspect ratio */
 }
 #stranici {
     display: flex; /* Use flexbox for the navigation links */
@@ -54,7 +56,9 @@ nav {
     align-items: center; /* Center the links vertically */
     justify-content: flex-end; /* Align the links to the right */
     width: 80%; /* Adjust the width of the navigation links container */
-    height: 100%; /* Fill the height of the nav */
+    height: 100%;
+    border: #1C1F33 ;
+    border-width: 2px; /* Fill the height of the nav */
 }
 .stranica {
     text-align: center; /* Center the text */
@@ -66,7 +70,8 @@ nav {
     width: 30%;
     padding: 10px; /* Add padding for better spacing */
   
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000; 
+   
 }
 .stranica:hover {
     background-color: #3772FF; /* Ensure hover effect works */
@@ -147,6 +152,7 @@ a {
     height: auto;
     padding: 20px;
     gap: 35px;
+   
 
    
 }
@@ -154,10 +160,12 @@ a {
 {
 font-size: 2.3rem;
 
+
 }
 
 #parva_novina h1 {
    font-size: 2rem;
+   
 }
 #mapa
 {
@@ -185,6 +193,116 @@ font-size: 2.3rem;
     cursor: pointer;
     font-size: 20px; 
     z-index: 1000;
+}
+
+#kontakti
+{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Add spacing between items */
+    padding: 10px; /* Add padding for better spacing */
+    
+    
+
+}
+#imeil
+{
+    font-size: 2rem;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+}
+#igikona
+{
+    margin-top: 30px;
+}
+
+.sabitiq
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px; /* Add spacing between items */
+    padding: 20px; /* Add padding for better spacing */
+    width:80%;
+    height: 100%;
+
+}
+
+#parvotosabitie
+ 
+{
+width:43% ;
+height: auto;
+background-color: #2763dc;
+border: 2px solid #1C1F33;
+position: relative; /* Make the container a positioning context */
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: flex-start; /* Ensure items are aligned at the top */
+    gap: 10px; /* Add spacing between text and button */
+    box-sizing: border-box;
+
+   
+  
+}
+#parvotosabitie:hover
+{
+    background-color: #283bb8;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+#sbornas
+{
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: space-around;
+
+    
+}
+
+
+
+
+.myButon {
+   
+   
+    box-shadow: inset 0px 6px 17px 3px #23395e;
+    background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 1px solid #1f2f47;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 28px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 14px #263666;
+    margin-right: 3%;
+    margin-left: auto;
+    margin-bottom: 3%;
+}
+
+#infobody
+{
+  padding-top: calc(var(--nav-height) + 1%);
+
+
 }
 
 
