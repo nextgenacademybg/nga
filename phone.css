@@ -115,4 +115,53 @@
         line-height: 1.4; /* Improve readability */
     }
    
+    #sbornas {
+        margin-top:210px; /* Remove unnecessary margin */
+        padding-top:210px ;
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add spacing between items */
+        padding: 10px; /* Add padding around the container */
+    }
+
+    #parvotosabitie {
+        width: 90%; /* Make each item take up most of the screen width */
+        margin: 0 auto; /* Center the items horizontally */
+        padding: 15px; /* Add padding for better spacing */
+        display: flex;
+        flex-direction: column; /* Arrange content in a column */
+        align-items: flex-start; /* Align items to the start */
+        justify-content: flex-start; /* Ensure items are aligned at the top */
+        position: relative; /* Ensure the button is positioned relative to this container */
+        box-sizing: border-box; /* Include padding and border in width calculations */
+        gap: 10px; /* Add spacing between the text and the button */
+    }
+
+    .myButon {
+        align-self: flex-start; /* Align the button to the start of the container */
+        font-size: 16px; /* Reduce button font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Ensure the button doesn't overflow */
+        word-wrap: break-word; /* Break text if it overflows */
+        margin-top: 10px; /* Add spacing between the text and the button */
+        position: static; /* Ensure the button flows naturally in the layout */
+    }
+
+    #stranici {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center the links */
+        width: 100%; /* Use full width for navigation */
+    }
+    
+    .stranica {
+        width: 100%; /* Make each navigation link take full width */
+        padding: 10px 0; /* Add vertical padding */
+    }
+    
+    #logoto {
+        width: 80%; /* Adjust logo size for smaller screens */
+    }
+    
+    #infobody {
+        padding: 10px; /* Add padding around the body content */
+    }
 }
