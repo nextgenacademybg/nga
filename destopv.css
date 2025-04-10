@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/Intro-Regular-Alt.woff2') format('woff2'),
+         url('../fonts/Intro-Regular-Alt.woff') format('woff'),
+         url('../fonts/Intro-Regular-Alt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --nav-height: 80px; /* Set the height of the navigation bar */
 }
 .homebody {
-    background-color:rgb(123, 241, 182);
+    background-color:#2ACCE8;
 }
 html, body {
     height: 100%; /* Allow the height to adjust based on content */
@@ -15,6 +23,7 @@ html, body {
     overflow-x: hidden; 
     display: flex;
     flex-direction: column;
+    
 }
 img {
     display: block;
@@ -27,7 +36,7 @@ nav {
     justify-content: space-between; /* Add space between the logo and links */
     height: var(--nav-height); /* Use the variable for the navigation height */
     padding: 0; /* Add horizontal padding */
-    background-color:rgb(123, 241, 182); /* Ensure the background color is visible */
+    background-color:#0097B2; /* Ensure the background color is visible */
     z-index: 1000; /* Ensure it appears above other elements */
     position: fixed; /* Keep the nav fixed at the top */
     top: 0;
@@ -59,6 +68,7 @@ nav {
     justify-content: flex-end; /* Align the links to the right */
     width: 80%; /* Adjust the width of the navigation links container */
     height: 100%;
+    background-color:#0097B2;
     border: #1C1F33 ;
     border-width: 2px; /* Fill the height of the nav */
 }
@@ -71,7 +81,7 @@ nav {
     height: 100%; /* Allow the height to adjust */
     width: 16%;
     padding: 10px; /* Add padding for better spacing */
-  
+    background-color:#0097B2;
     z-index: 1000; 
 
     position: relative;
@@ -83,7 +93,7 @@ nav {
    
 }
 .stranica:hover {
-    background-color: #0ae669; /* Ensure hover effect works */
+    background-color:rgb(0, 132, 255); /* Ensure hover effect works */
 }
 .stranica:not(:last-child)::after {
     content: "";
@@ -93,8 +103,8 @@ nav {
     transform: translateY(-50%);
     height: 30px; /* half height look */
     width: 3px;
-    background-color: #0ae669; /* light gray divider */
-    opacity: 0.7;
+    background-color: #000000; /* light gray divider */
+    opacity: 1;
   }
 
 
@@ -180,6 +190,7 @@ a {
 #izre
 {
 font-size: 2.3rem;
+font-family: 'MyFont', sans-serif;
 
 
 }
