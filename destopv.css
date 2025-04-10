@@ -27,7 +27,7 @@ nav {
     justify-content: space-between; /* Add space between the logo and links */
     height: var(--nav-height); /* Use the variable for the navigation height */
     padding: 0; /* Add horizontal padding */
-    background-color: #0168A3; /* Ensure the background color is visible */
+    background-color:rgb(123, 241, 182); /* Ensure the background color is visible */
     z-index: 1000; /* Ensure it appears above other elements */
     position: fixed; /* Keep the nav fixed at the top */
     top: 0;
@@ -40,14 +40,14 @@ nav {
     display: flex; /* Ensure the logo container is visible */
     align-items: center; /* Center the logo vertically */
     justify-content: flex-start; /* Align the logo to the left */
-    width: 20%; /* Adjust the width of the logo container */
+    width: 15%; /* Adjust the width of the logo container */
     height: 100%; /* Fill the height of the nav */
     justify-content: center;
     padding: 3px;;
 }
 
 #logoto {
-    width: 60%; /* Ensure the logo fits within its container */
+    width: 70%; /* Ensure the logo fits within its container */
     height: 100%; /* Maintain the aspect ratio */
 }
 #stranici {
@@ -65,17 +65,34 @@ nav {
     display: flex; /* Ensure the links are visible */
     align-items: center;
     justify-content: center;
-    background-color: #79CAF9; /* Ensure the background color is visible */
+    /* Ensure the background color is visible */
     height: 100%; /* Allow the height to adjust */
-    width: 30%;
+    width: 16%;
     padding: 10px; /* Add padding for better spacing */
   
     z-index: 1000; 
+    position: relative;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+   
    
 }
 .stranica:hover {
-    background-color: #3772FF; /* Ensure hover effect works */
+    background-color: #0ae669; /* Ensure hover effect works */
 }
+.stranica:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px; /* half height look */
+    width: 3px;
+    background-color: #0ae669; /* light gray divider */
+    opacity: 0.7;
+  }
+
 
 a {
     text-decoration: none;
@@ -99,7 +116,7 @@ a {
   
         margin-top: var(--nav-height); /* Add padding to account for the navbar height */
        
-        height: auto;
+        
 }
 .manqci img {
     max-width: 40%; 
@@ -143,7 +160,7 @@ a {
 }
 #parva_novina
 {
-    margin-top: 22%;
+    margin-top: 18%;
     justify-content: center;
     flex-direction: column;
     display: flex;
@@ -303,6 +320,39 @@ position: relative; /* Make the container a positioning context */
   padding-top: calc(var(--nav-height) + 1%);
 
 
+}
+.zapisvane {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #13b73f 5%, #10cb7d 100%);
+	background-color:#129490;
+	border-radius:15px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#23251d;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:14px 43px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+.zapisvane:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#129490;
+}
+.zapisvane:active {
+	position:relative;
+	top:2px;
+}
+#menuto {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 24px; /* Adjust size for phones */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it appears above other elements */
 }
 
 

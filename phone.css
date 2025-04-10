@@ -17,12 +17,12 @@
 
     nav {
         flex-direction: column; /* Stack items vertically */
-        height: auto; /* Let the height adjust dynamically */
+        height:80px; /* Let the height adjust dynamically */
         padding: 5px 0; /* Reduce padding to remove extra space */
         display: flex-start; /* Ensure the navigation bar wraps its content */
         align-items: center; /* Center the content horizontally */
         justify-content: center; /* Center the content vertically */
-        background-color: #0168A3; /* Ensure the background color is visible */
+        background-color:rgb(255, 255, 255); /* Ensure the background color is visible */
         overflow: visible; /* Allow content to flow properly */
         box-sizing: border-box; /* Include padding in height calculations */
     }
@@ -42,17 +42,46 @@
     }
 
     #stranici {
-        width: 100%; /* Full width for navigation links */
+        margin-top: 70px; /* Add margin to account for the logo height */
+        display: none; /* Hidden by default */
         flex-direction: column; /* Stack links vertically */
         align-items: center; /* Center the links */
-        gap: 10px;
-        display: flex; /* Ensure the container is visible */
-        height: 50%;
+        position: absolute; /* Position relative to the nav */
+        top: 80px; /* Adjust based on the height of the nav (var(--nav-height1)) */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: rgb(123, 241, 182); /* Match navbar background */
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        border: none; /* Remove the border for the navigation container */
+    }
+
+    #stranici.show {
+        display: flex; /* Show the menu */
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #stranici a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    #stranici a:hover {
+        background-color: #3772FF;
+        color: white;
     }
 
     .stranica {
-        width: 90%; /* Make links take up most of the screen width */
-        max-width: 300px; /* Optional: Set a maximum width for the buttons */
+        width: 100%; /* M0pxake links take up most of the screen width */
+         /* Optional: Set a maximum width for the buttons */
         text-align: center; /* Center the text */
         display: flex; /* Ensure the links are visible */
         align-items: center;
@@ -60,13 +89,18 @@
         background-color: #79CAF9; /* Ensure the background color is visible */
         height: auto; /* Allow the height to adjust */
         padding: 10px; /* Add padding for better spacing */
-        border-radius: 5px; /* Optional: Add rounded corners */
+        
         box-sizing: border-box; /* Include padding in width calculations */
         z-index: 1000; /* Ensure it appears above other elements */
+        border: none; /* Remove the border for individual links */
     }
 
     .stranica:hover {
         background-color: #3772FF; /* Ensure hover effect works */
+    }
+
+    .stranica:not(:last-child)::after {
+        display: none; /* Remove the divider between links */
     }
 
     a {
@@ -88,7 +122,8 @@
         flex-direction: column; /* Stack image and description vertically */
         align-items: center; /* Center content */
         gap: 20px; /* Add spacing between image and description */
-        padding: 10px; /* Add padding */
+        padding: 10px; 
+        height: auto;/* Add padding */
     }
 
     .manqci img {
@@ -96,9 +131,10 @@
         height: auto; /* Maintain aspect ratio */
     }
 
+
     .manqci:first-of-type {
-        margin-top: 0; /* Remove unnecessary margin */
-        padding-top: var(--nav-height1); /* Add padding to account for the fixed nav height */
+        margin-top: 10px;/* Remove unnecessary margin */
+        padding-top: 20px; /* Add padding to account for the fixed nav height */
     }
 
     .description {
@@ -116,8 +152,8 @@
     }
    
     #sbornas {
-        margin-top:210px; /* Remove unnecessary margin */
-        padding-top:210px ;
+        margin-top:230px; /* Remove unnecessary margin */
+        padding-top:230px ;
         flex-direction: column; /* Stack items vertically */
         gap: 20px; /* Add spacing between items */
         padding: 10px; /* Add padding around the container */
@@ -146,22 +182,61 @@
         position: static; /* Ensure the button flows naturally in the layout */
     }
 
-    #stranici {
-        flex-direction: column; /* Stack navigation links vertically */
-        align-items: center; /* Center the links */
-        width: 100%; /* Use full width for navigation */
-    }
-    
-    .stranica {
-        width: 100%; /* Make each navigation link take full width */
-        padding: 10px 0; /* Add vertical padding */
-    }
-    
     #logoto {
         width: 80%; /* Adjust logo size for smaller screens */
     }
     
     #infobody {
         padding: 10px; /* Add padding around the body content */
+    }
+    #imeil
+    {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+    #backToTopBtn {
+        width: 40px; /* Slightly smaller for phones */
+        height: 40px;
+        font-size: 18px;
+    }
+    #igikona {
+        margin-top: 20px; /* Adjust spacing for smaller screens */
+        width: 50px; /* Adjust icon size for smaller screens */
+    }
+    .zapisvane {
+        box-shadow: 0px 1px 0px 0px #1c1b18;
+        background:linear-gradient(to bottom, #13b73f 5%, #10cb7d 100%);
+        background-color:#129490;
+        border-radius:15px;
+        border:1px solid #333029;
+        display:inline-block;
+        cursor:pointer;
+        color:#23251d;
+        font-family:Arial;
+        font-size:17px;
+        font-weight:bold;
+        padding:14px 43px;
+        text-decoration:none;
+        text-shadow:0px 0px 0px #ffffff;
+    }
+    .zapisvane:hover {
+        background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+        background-color:#129490;
+    }
+    .zapisvane:active {
+        position:relative;
+        top:2px;
+    }
+    #menuto {
+        display: block; /* Show the menu on smaller screens */
+        cursor: pointer;
+        font-size: 24px; /* Adjust size for phones */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001; /* Ensure it appears above other elements */
+    }
+    #menuto p {
+        font-size: 1.5rem; /* Adjust font size for the three lines */
+        margin: 0; /* Remove default margin */
     }
 }
