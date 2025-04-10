@@ -152,8 +152,10 @@
     }
    
     #sbornas {
+
         margin-top:230px; /* Remove unnecessary margin */
         padding-top:230px ;
+
         flex-direction: column; /* Stack items vertically */
         gap: 20px; /* Add spacing between items */
         padding: 10px; /* Add padding around the container */
@@ -182,6 +184,8 @@
         position: static; /* Ensure the button flows naturally in the layout */
     }
 
+
+
     #logoto {
         width: 80%; /* Adjust logo size for smaller screens */
     }
@@ -189,6 +193,7 @@
     #infobody {
         padding: 10px; /* Add padding around the body content */
     }
+
     #imeil
     {
         font-size: 1.1rem; /* Adjust font size for smaller screens */
@@ -239,4 +244,5 @@
         font-size: 1.5rem; /* Adjust font size for the three lines */
         margin: 0; /* Remove default margin */
     }
+
 }
