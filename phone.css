@@ -111,12 +111,18 @@
 
     #parva_novina {
        
-        padding-top: 210px; /* Add padding to account for the navbar height */
+        padding-top: 80px; /* Add padding to account for the navbar height */
        
         height: auto; /* Allow the height to adjust based on content */
         display: flex;
         flex-direction: column;
+       
+        
+
     }
+   
+
+
 
     .manqci {
         flex-direction: column; /* Stack image and description vertically */
@@ -243,6 +249,14 @@
     #menuto p {
         font-size: 1.5rem; /* Adjust font size for the three lines */
         margin: 0; /* Remove default margin */
+    }
+
+    #homebody h1 {
+        margin-bottom: 10px; /* Add space below the heading */
+    }
+
+    #homebody p {
+        margin-top: 20px; /* Add space above the paragraph */
     }
 
 }
