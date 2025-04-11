@@ -17,7 +17,7 @@
 
     nav {
         flex-direction: column; /* Stack items vertically */
-        height:80px; /* Let the height adjust dynamically */
+        height:90px; /* Let the height adjust dynamically */
         padding: 5px 0; /* Reduce padding to remove extra space */
         display: flex-start; /* Ensure the navigation bar wraps its content */
         align-items: center; /* Center the content horizontally */
@@ -34,6 +34,7 @@
         height: auto; /* Let the height adjust dynamically */
         display: flex; /* Ensure the container is visible */
         align-items: center; /* Center the logo vertically */
+        padding-bottom: 20px;
     }
 
     #logoto {
@@ -215,7 +216,7 @@
     }
     .zapisvane {
         box-shadow: 0px 1px 0px 0px #1c1b18;
-        background:linear-gradient(to bottom, #13b73f 5%, #10cb7d 100%);
+        background:linear-gradient(to bottom, #24a0e7 5%, #1ab5dc 100%);
         background-color:#129490;
         border-radius:15px;
         border:1px solid #333029;
