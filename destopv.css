@@ -88,6 +88,8 @@ nav {
     padding: 10px 20px;
     color: #333;
     text-decoration: none;
+    font-family: 'MyFont', sans-serif;
+
    
 
    
@@ -111,7 +113,15 @@ nav {
 a {
     text-decoration: none;
     display: block;
-    color: black; /* Ensure the text color is visible */
+    color: rgb(0, 0, 0); /* Ensure the text color is visible */
+}
+.stranica h1
+{
+    font-size: 1.2rem; /* Adjust font size for better visibility */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+    color: #000000; /* Ensure the text color is visible */
+    font-family: 'MyFont', sans-serif;
 }
 .manqci {
    
@@ -197,6 +207,7 @@ font-family: 'MyFont', sans-serif;
 
 #parva_novina h1 {
    font-size: 2rem;
+   font-family: 'MyFont', sans-serif;
    
 }
 #mapa
@@ -339,16 +350,15 @@ position: relative; /* Make the container a positioning context */
 
 .zapisvane {
 	box-shadow: 0px 1px 0px 0px #1c1b18;
-	background:linear-gradient(to bottom, #13b73f 5%, #10cb7d 100%);
+	background:linear-gradient(to bottom, #2b8fd1 5%, #327aef 100%);
 	background-color:#129490;
 	border-radius:15px;
-	border:1px solid #333029;
+	border:4px solid #000000;
 	display:inline-block;
 	cursor:pointer;
-	color:#23251d;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
+	color:#000000;
+	font-family: 'MyFont', sans-serif;
+	font-size: 1.9rem;
 	padding:14px 43px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #ffffff;
