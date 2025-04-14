@@ -4,12 +4,26 @@
     }
 
     html, body {
-        height: 200vh; /* Allow the height to adjust based on content */
+        height: 100vh; /* Allow the height to adjust based on content */
         width: 100%; 
         overflow-x: hidden; 
         display: flex;
         flex-direction: column;
     }
+
+    .homebody {
+        overflow: hidden; /* Disable scrolling */
+        height: 100vh; /* Set height to the viewport height */
+        scrollbar-width: none; /* For Firefox */
+        padding-top: 55px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('snimkite/clasrom.jpg');
+         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    
 
     img {
         display: block;
@@ -112,14 +126,21 @@
 
     #parva_novina {
        
-        padding-top: 80px; /* Add padding to account for the navbar height */
+       /* Add padding to account for the navbar height */
        
-        height: auto; /* Allow the height to adjust based on content */
+        height: 100%; /* Allow the height to adjust based on content */
         display: flex;
         flex-direction: column;
+        padding-top: 55px;
+        padding-top: 0%;
+        margin-bottom: 0px; /* Remove unnecessary margin */
        
         
 
+    }
+    #izre
+    {
+        font-size: 1.4rem;
     }
    
 
@@ -257,7 +278,46 @@
     }
 
     #homebody p {
-        margin-top: 20px; /* Add space above the paragraph */
+        /* Add space above the paragraph */
     }
+    .lekciq1body
+{
+    background-color: rgb(100, 255, 142);
+    padding-top:calc(var(--nav-height) + 1%);
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row; /* Arrange content in a row */
+    width: 100%;
+    flex-wrap: wrap;
+     /* Add spacing between items */
+    justify-content: space-between;
+    height: 100%;
+
+}
+.lekciq1body p
+{
+   width: 100%; /* Make the text take up the full width */
+   text-align: justify; /* Optional: Justify the text for better readability */
+   margin-bottom: 20px; /* Add spacing between paragraphs */
+   margin-bottom: 30px;
+   margin-left: 20px; /* Add left margin for better alignment */
+   margin-right: 20px;
+   text-align: center;
+   margin-top: 40px ; /* Add right margin for better alignment */
+}
+#dqsnoto
+{
+ text-align: center;
+}
+#silviq
+{
+    width: 100%; /* Make the image take up the full width */
+    height: 30%; /* Maintain the aspect ratio */
+    display: block;
+    object-fit: cover;
+    margin-left: 30%; 
+    margin-right: 0;/* Center the image horizontally */
+}
 
 }
