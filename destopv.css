@@ -15,7 +15,10 @@
     --nav-height: 80px; /* Set the height of the navigation bar */
 }
 .homebody {
-    background-color:#2ACCE8;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('snimkite/clasrom.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 html, body {
     height: 100%; /* Allow the height to adjust based on content */
@@ -23,6 +26,7 @@ html, body {
     overflow-x: hidden; 
     display: flex;
     flex-direction: column;
+    /* Set the opacity of the body */
     
 }
 img {
@@ -43,6 +47,7 @@ nav {
     left: 0;
     width: 100%;
     box-sizing: border-box; /* Include padding in width calculations */
+    
 }
 
 #mqsto_na_ikonkata {
@@ -181,10 +186,11 @@ a {
     
     width: 100%; 
     overflow: visible; 
+
 }
 #parva_novina
 {
-    margin-top: 18%;
+    margin-top: 14%;
     justify-content: center;
     flex-direction: column;
     display: flex;
@@ -193,6 +199,7 @@ a {
     height: auto;
     padding: 20px;
     gap: 35px;
+    
    
 
    
@@ -201,6 +208,7 @@ a {
 {
 font-size: 2.3rem;
 font-family: 'MyFont', sans-serif;
+color: rgb(255, 255, 255);
 
 
 }
@@ -208,6 +216,7 @@ font-family: 'MyFont', sans-serif;
 #parva_novina h1 {
    font-size: 2rem;
    font-family: 'MyFont', sans-serif;
+   color: rgb(255, 255, 255);
    
 }
 #mapa
@@ -380,6 +389,37 @@ position: relative; /* Make the container a positioning context */
     right: 20px;
     z-index: 1001; /* Ensure it appears above other elements */
 }
+.lekciq1body
+{
+    background-color: rgb(100, 255, 142);
+    padding-top:calc(var(--nav-height) + 1%);
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row; /* Arrange content in a row */
+    width: 100%;
+    flex-wrap: wrap;
+     /* Add spacing between items */
+    justify-content: space-between;
+    height: 100%;
+
+}
+.lekciq1body p
+{
+   width: 45%;
+}
+#dqsnoto
+{
+ text-align: end;
+}
+#silviq
+{
+    max-width: 40%; /* Reduce the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 
 
 
