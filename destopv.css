@@ -312,6 +312,33 @@ position: relative; /* Make the container a positioning context */
     transform: scale(1.05);
 }
 
+#vtorotosabitie
+
+{
+    width:43% ;
+    height: auto;
+    background-color: #2763dc;
+    border: 2px solid #1C1F33;
+    position: relative; /* Make the container a positioning context */
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: flex-start; /* Ensure items are aligned at the top */
+    gap: 10px; /* Add spacing between text and button */
+    box-sizing: border-box;
+
+
+
+}
+#vtorotosabitie:hover
+{
+    background-color: #283bb8;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: scale(1.05);
+}
 
 #sbornas
 {
@@ -419,6 +446,14 @@ position: relative; /* Make the container a positioning context */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
 }
+#desi
+{
+    max-width: 44%; /* Reduce the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 
 
 

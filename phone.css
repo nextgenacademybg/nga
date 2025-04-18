@@ -202,6 +202,19 @@
         gap: 10px; /* Add spacing between the text and the button */
     }
 
+    #vtorotosabitie {
+        width: 90%; /* Make each item take up most of the screen width */
+        margin: 0 auto; /* Center the items horizontally */
+        padding: 15px; /* Add padding for better spacing */
+        display: flex;
+        flex-direction: column; /* Arrange content in a column */
+        align-items: flex-start; /* Align items to the start */
+        justify-content: flex-start; /* Ensure items are aligned at the top */
+        position: relative; /* Ensure the button is positioned relative to this container */
+        box-sizing: border-box; /* Include padding and border in width calculations */
+        gap: 10px; /* Add spacing between the text and the button */
+    }
+
     .myButon {
         align-self: flex-start; /* Align the button to the start of the container */
         font-size: 16px; /* Reduce button font size for smaller screens */
@@ -319,5 +332,13 @@
     margin-left: 30%; 
     margin-right: 0;/* Center the image horizontally */
 }
-
+    #desi
+    {
+        width: 100%; /* Make the image take up the full width */
+        height: 30%; /* Maintain the aspect ratio */
+        display: block;
+        object-fit: cover;
+        margin-left: 30%;
+        margin-right: 0;/* Center the image horizontally */
+    }
 }
