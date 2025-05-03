@@ -23,8 +23,6 @@
 
     }
 
-    
-
     img {
         display: block;
     }
@@ -233,6 +231,10 @@
     
     #infobody {
         padding: 10px; /* Add padding around the body content */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('snimkite/clasrom.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     #imeil
